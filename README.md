@@ -28,5 +28,5 @@ Website hosted on: [Add your MyWeb or GitHub Pages URL here]
 
 ##  Project Folder Structure
 
-``` ece4880-lab3-portfolio/ ├── index.html # Homepage with navigation ├── about.html # Optional team info/about page ├── member1.html # Profile page with contact form ├── member2.html ├── member3.html ├── README.md # This file ├── .gitignore # Ignore system files & logs │ ├── style/ │ └── style.css # All styling in one place │ ├── js/ │ └── script.js # Handles password & contact form logic │ ├── protected/ │ ├── index.html # Protected content main page │ └── logs/ │ └── .gitkeep # Keeps logs folder tracked by Git │ ├── scripts/ │ └── generate_protected.py # Offline tool for generating protected content │ └── assets/ └── logo-placeholder.png # Optional: team logos or graphics ```
+
 
