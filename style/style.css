@@ -1,6 +1,10 @@
 /* Site-wide styling starts here */
-button {
+.blue-button {
     background-color: aqua;
     border-radius: 15px;
-    
+
+}
+
+.red-button {
+    background-color: red;
 }
