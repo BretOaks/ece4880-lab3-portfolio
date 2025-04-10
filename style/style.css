@@ -1,1 +1,6 @@
 /* Site-wide styling starts here */
+button {
+    background-color: aqua;
+    border-radius: 15px;
+    
+}
