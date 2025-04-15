@@ -2,18 +2,83 @@ body,html {
     margin: 0;
     padding: 0;
     vertical-align: middle;
+    background-color: #fff;
 }
 
-.main-container {
+.header {
     display: block;
 
     border-style: solid;
+    border-bottom: none;
     border-width: 5px;
     border-color: #000;
+    border-radius: 10px 10px 0 0;
 
-    height: 70vh;
-    width: 70vW;
+    height: 10vh;
+    width: 70vw;
+
+    margin-top: 5vh;
 
     justify-self: center;
+
+    background-color: #FFCD00;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+}
+
+.main-container {
+    display: flex;
+
+    border-style: solid;
+    border-top: none;
+    border-width: 5px;
+    border-color: #000;
+    border-radius: 0 0 10px 10px;
+
+    height: 80vh;
+    width: 70vw;
+
+    justify-self: center;
+    justify-content: space-between;
     
+
+    background-color: #FFCD00;
+}
+
+@font-face {
+    font-family: 'Antonio';
+    src: url('fonts/antonio/Antonio-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('fonts/Roboto/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('fonts/Roboto/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto BoldItalic';
+    src: url('fonts/Roboto/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

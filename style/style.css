@@ -1,10 +1,134 @@
-/* Site-wide styling starts here */
-.blue-button {
-    background-color: aqua;
-    border-radius: 15px;
+body,html {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.header {
+    display: block;
+
+    border-style: solid;
+    border-bottom: none;
+    border-width: 5px;
+    border-color: #000;
+    border-radius: 10px 10px 0 0;
+
+    height: 10vh;
+    width: 70vw;
+
+    margin-top: 5vh;
+
+    justify-self: center;
+
+    background-color: #FFCD00;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+}
+
+.main-container {
+    display: flex;
+
+    border-style: solid;
+    border-top: none;
+    border-width: 5px;
+    border-color: #000;
+    border-radius: 0 0 10px 10px;
+
+    height: 80vh;
+    width: 70vw;
+
+    justify-self: center;
+    justify-content: space-between;
+    
+
+    background-color: #FFCD00;
+}
+
+.box {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    margin-top: 15vh;
+
+    height: 40vh;
+    width: 23vw;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000;
+    border-radius: 10px;
+
+    background-color: #fff;
 
 }
 
-.red-button {
-    background-color: red;
+.box h2 {
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+
+    margin: 10px 0;
+}
+
+.box p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.box a {
+    font-family: 'Roboto BoldItalic';
+    font-family: 'Roboto Bold';
+    text-decoration-color: #FFCD00;
+    text-decoration-thickness: 3px;
+    color: #000;
+    text-align: right;
+
+    margin-top: 5vh;
+    margin-right: 2vw;
+}
+
+.box a:hover {
+    text-decoration-color: #fff;
+    transition: text-decoration 0.3s ease;
+}
+
+@font-face {
+    font-family: 'Antonio';
+    src: url('fonts/antonio/Antonio-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('fonts/Roboto/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('fonts/Roboto/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto BoldItalic';
+    src: url('fonts/Roboto/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
