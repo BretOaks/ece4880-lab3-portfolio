@@ -6,9 +6,9 @@ This is a group portfolio website created for **Lab 3** of *Principles of ECE De
 
 ##  Team Members
 
-- [Teammate 1]
-- [Teammate 2]
-- [Teammate 3] 
+- Sam Gorman
+- Bret Okrasinski
+- Joe Manternach
 
 ##  Live Website
 
