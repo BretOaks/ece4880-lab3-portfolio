@@ -2,50 +2,177 @@ body,html {
     margin: 0;
     padding: 0;
     vertical-align: middle;
-    background-color: #fff;
 }
 
-.header {
+html {
+    height: 100%;
+    background-color: #ffffff;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 35px,
+        rgba(255, 205, 0, 0.2) 35px,
+        rgba(255, 205, 0, 0.2) 70px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 35px,
+        rgba(255, 205, 0, 0.4) 35px,
+        rgba(255, 205, 0, 0.4) 70px
+      );
+    background-attachment: fixed;
+}
+  
+.main-container {
     display: block;
 
-    border-style: solid;
-    border-bottom: none;
-    border-width: 5px;
-    border-color: #000;
-    border-radius: 10px 10px 0 0;
-
-    height: 10vh;
+    height: 90vh;
     width: 70vw;
 
     margin-top: 5vh;
 
     justify-self: center;
 
-    background-color: #FFCD00;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f7f7f7;
+    border-radius: 10px;
+
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: block;
+    border-radius: 10px 10px 0 0;
+
+    height: 10vh;
+    width: 70vw;
+
+    justify-self: center;
+
+    background-color: #fff;
 }
 
 .header h1 {
     text-align: center;
     font-family: 'Antonio', sans-serif;
+    font-size: 40px;
+
+    padding-top: 15px;
+    margin-top: 0;
 }
 
-.main-container {
+.body-container {
     display: flex;
 
-    border-style: solid;
-    border-top: none;
-    border-width: 5px;
-    border-color: #000;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0;
 
-    height: 80vh;
+    height: 60vh;
     width: 70vw;
 
     justify-self: center;
     justify-content: space-between;
     
+    background-color: #fff;
+}
 
-    background-color: #FFCD00;
+.box {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    margin-top: 15vh;
+
+    height: 40vh;
+    width: 23vw;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f7f7f7;
+    border-radius: 10px;
+    
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+
+    background-color: #fff;
+
+}
+
+.box h2 {
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+
+    margin: 10px 0;
+}
+
+.box p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.box a {
+    font-family: 'Roboto BoldItalic';
+    font-family: 'Roboto Bold';
+    text-decoration-color: #FFCD00;
+    text-decoration-thickness: 3px;
+    color: #000;
+    text-align: right;
+
+    margin-top: 5vh;
+    margin-right: 2vw;
+}
+
+.box a:hover {
+    text-decoration-color: #fff;
+    transition: text-decoration 0.3s ease;
+}
+
+.admin-login {
+    display: flex;
+
+    border-radius: 0 0 10px 10px;
+
+    height: 20vh;
+    width: 70vw;
+
+    justify-self: center;
+    justify-content:end;
+
+    background-color: #fff;
+}
+
+.admin-login button {
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 10px;
+
+    margin-top: 5vh;
+    margin-right: 5vw;
+
+    height: 5vh;
+    width: 10vw;
+
+    background-color: #fff;
+
+    text-align: center;
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: 16px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+
+.admin-login button:hover {
+
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px) translateX(2px);
 }
 
 @font-face {
