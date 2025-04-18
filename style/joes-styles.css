@@ -68,7 +68,7 @@ html {
 
     border-radius: 0;
 
-    height: 60vh;
+    height: 40vh;
     width: 70vw;
 
     justify-self: center;
@@ -81,11 +81,9 @@ html {
 
     display: flex;
     flex-direction: column;
-    margin: 1vw;
-    margin-top: 15vh;
 
     height: 40vh;
-    width: 23vw;
+    width: 35vw;
 
     border-style: solid;
     border-width: 5px;
@@ -102,7 +100,6 @@ html {
     text-align: center;
     font-family: 'Antonio', sans-serif;
 
-    margin: 10px 0;
 }
 
 .box p {
@@ -113,6 +110,7 @@ html {
 }
 
 .box a {
+    
     font-family: 'Roboto BoldItalic';
     font-family: 'Roboto Bold';
     text-decoration-color: #FFCD00;
