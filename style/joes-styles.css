@@ -25,7 +25,8 @@ html {
 }
   
 .main-container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 
     height: 90vh;
     width: 70vw;
@@ -33,145 +34,108 @@ html {
     margin-top: 5vh;
 
     justify-self: center;
-
+    justify-content: space-between;
+    
     border-style: solid;
     border-width: 5px;
     border-color: #f7f7f7;
     border-radius: 10px;
 
     box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.1);
+
+    background-color: #fff;
 }
 
-.header {
-    display: block;
-    border-radius: 10px 10px 0 0;
+.col-1{
+    width: 25vw;
+    border-radius: 15px;
 
-    height: 10vh;
-    width: 70vw;
+    margin-left: 1vw;
+
+}
+
+.col-1 img{
+
+    position: relative;
+    width: 100%;
+
+    top: 10vh;
 
     justify-self: center;
 
-    background-color: #fff;
+    border-radius: 15px;
 }
 
-.header h1 {
-    text-align: center;
-    font-family: 'Antonio', sans-serif;
-    font-size: 40px;
-
-    padding-top: 15px;
-    margin-top: 0;
-}
-
-.body-container {
-    display: flex;
-
-    border-radius: 0;
-
-    height: 40vh;
-    width: 70vw;
-
-    justify-self: center;
-    justify-content: space-between;
-    
-    background-color: #fff;
-}
-
-.box {
-
-    display: flex;
-    flex-direction: column;
-
-    height: 40vh;
-    width: 35vw;
-
-    border-style: solid;
-    border-width: 5px;
-    border-color: #f7f7f7;
-    border-radius: 10px;
-    
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
-
-    background-color: #fff;
-
-}
-
-.box h2 {
-    text-align: center;
-    font-family: 'Antonio', sans-serif;
-
-}
-
-.box p {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 0 10px;
-}
-
-.box a {
-    
-    font-family: 'Roboto BoldItalic';
-    font-family: 'Roboto Bold';
-    text-decoration-color: #FFCD00;
-    text-decoration-thickness: 3px;
-    color: #000;
-    text-align: right;
-
-    margin-top: 5vh;
+.col-2{
+    width: 40vw;
+    margin-left: 2vw;
     margin-right: 2vw;
 }
 
-.box a:hover {
-    text-decoration-color: #fff;
-    transition: text-decoration 0.3s ease;
+.col-2 p {
+    font-family: 'Roboto';
 }
 
-.admin-login {
+.sub-title{
+    font-family: 'Antonio';
+    font-size: 60px;
+    font-weight: 600;
+    color: #000;
+}
+
+.tab-titles{
     display: flex;
+    margin: 20px 0 40px;
+    
+    font-family: 'Antonio';
 
-    border-radius: 0 0 10px 10px;
-
-    height: 20vh;
-    width: 70vw;
-
-    justify-self: center;
-    justify-content:end;
-
-    background-color: #fff;
 }
 
-.admin-login button {
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: #000;
-    border-radius: 10px;
-
-    margin-top: 5vh;
-    margin-right: 5vw;
-
-    height: 5vh;
-    width: 10vw;
-
-    background-color: #fff;
-
-    text-align: center;
-    font-family: 'Roboto Bold', sans-serif;
-    font-size: 16px;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.2s ease;
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
-
+    position: relative;
 }
 
-.admin-login button:hover {
-
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px) translateX(2px);
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#FFCD00;
+    position: absolute;
+    left: 0;
+    bottom:-8px;
+    transition: 0.5s;
 }
+
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 10px 0;
+
+    font-family: 'Roboto';
+}
+
+.tab-contents ul li span {
+    color:#FFCD00;
+    font-size: 16px;
+    font-family: 'Roboto Bold';
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
 
 @font-face {
     font-family: 'Antonio';
