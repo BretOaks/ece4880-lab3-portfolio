@@ -1,26 +1,3 @@
-// Load messages from localStorage
-window.addEventListener('DOMContentLoaded', () => {
-    const output = document.getElementById('output');
-    const messages = JSON.parse(localStorage.getItem('contactMessages')) || [];
-  
-    if (!output) return;
-  
-    if (messages.length === 0) {
-      output.innerHTML = '<p>No messages yet.</p>';
-    } else {
-      messages.forEach(msg => {
-        const div = document.createElement('div');
-        div.classList.add('message-block');
-        div.innerHTML = `
-          <p><strong>Name:</strong> ${msg.name}</p>
-          <p><strong>Email:</strong> ${msg.email}</p>
-          <p><strong>Message:</strong> ${msg.message}</p>
-          <hr>
-        `;
-        output.appendChild(div);
-      });
-    }
-  });
 
   var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
