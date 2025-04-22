@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Page</title>
+
+    <link rel="stylesheet" href="style/memberStyle.css">
+
+</head>
+<body>
+
+<div class="main-container">
+    <div class="col-1">
+        <img src="images/samPics/samProfile.jpg" alt="Photo of a river in Michigan">
+    </div>
+    <div class="col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+            
+            <br>
+        </p>
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'hobbies')">Hobbies</p>
+            <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>   
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>   
+            <p class="tab-links" onclick="opentab(event, 'contact')">Contact</p>  
+        </div>
+        <div class="tab-contents active-tab" id="hobbies">
+            <ul>
+                <li><span>Running</span><br>I enjoy running, particularly trail running, and have completed three half marathons. It's a great way to wrap up a great day, allowing me to unwind.</li>
+                <li><span>Biking</span><br>I bike commute to class every day and love finding new paths to ride. Exploring new routes keeps my daily rides exciting and fresh.</li>
+                <li><span>Fishing</span><br>I love fishing in creeks. Hooking into a monster small mouth is an exhilarating feeling that keeps me coming back for more.</li>
+                <li><span>Camping</span><br>I've loved camping since I was a kid. I enjoy being outdoors in the woods, and there's something special about cooking food over the fire at night, surrounded by nature.</li>
+            </ul>
+        </div>                
+        <div class="tab-contents" id="skills">
+            <ul>
+                <li><span>LTspice</span><br>I have extensive experience using LTspice in both academic settings and as a teaching assistant. In my coursework, I've applied the software for various circuit simulations and analyses, gaining a deep understanding of its features. As a TA, I've also guided students who are new to the software, helping them develop confidence in circuit modeling and analysis.</li>
+                <li><span>Object Oriented Programming</span><br>Object-oriented programming has been a core aspect of my development journey. I've coded multiple games, including a retro-style asteroid game in C++ and a platformer using a game engine. These projects allowed me to apply principles like inheritance, encapsulation, and polymorphism while working on engaging, interactive games.</li>
+                <li><span>MATLAB</span><br>I've utilized MATLAB for a range of projects, including designing a PID controller and working on digital signal processing. These experiences have honed my ability to leverage MATLAB's powerful toolsets for real-world engineering applications, from control systems to signal analysis.</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>Part-time Student Quality Engineer</span><br>As a dynamic software developer at John Deere, I leverage Python, Ignition, and SQL within an Agile team to drive improvements in the company's Quality Management System.</li>
+                <li><span>Teaching Assistant</span><br>As a teaching assistant for two semesters in an electronics class, I've had the opportunity to guide students through hands-on learning by helping them construct circuits and conduct precise measurements. Serving as the lead lab instructor, I addressed student inquiries by breaking down complex concepts into easily understandable explanations.</li>
+                <li><span>Vice President</span><br>I currently serve as the vice president for the University of Iowa Fantasy Football Organization. In this role, I help lead the group's initiatives, maintain the website, and foster a collaborative environment where members can connect, share ideas, and grow personally.</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="contact">
+            <ul>
+                <li><span>Email</span><br>gormansam32@gmail.com</li>
+            </ul>
+            <form id="contactForm" style="margin-top: 20px;">
+                <p><input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></p>
+                <p><input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></p>
+                <p><textarea id="message" placeholder="Your Message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea></p>
+                <button type="submit" style="padding: 10px 20px; background-color: #FFCD00; border: none; font-family: 'Roboto Medium'; border-radius: 5px;">Send Message</button>
+            </form>
+        </div>         
+    </div>
+
+</div>
+
+</body>
+
+<script src="js/joes-scripts.js"></script>
+
+</html>
+
+
