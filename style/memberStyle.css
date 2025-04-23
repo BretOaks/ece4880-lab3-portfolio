@@ -217,6 +217,7 @@ html {
         flex-wrap: wrap;
     
         height: auto;
+        min-height: 80vh;
         width: 70vw;
     
         margin-top: 5vh;
@@ -233,11 +234,14 @@ html {
         box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.1);
     
         background-color: #fff;
+
+        transition: height 0.4s ease;
     }
     
     .col-1{
         width: 25vw;
         height: auto;
+        transition: height 0.4s ease;
     
         border-radius: 15px;
     
@@ -262,6 +266,7 @@ html {
         margin-left: 2vw;
         margin-right: 2vw;
         height: auto;
+        transition: height 0.4s ease;
     }
     
     .col-2 h1 {
@@ -441,6 +446,4 @@ html {
       button:hover {
         background-color: #c29b00;
       }
-      
-
 }

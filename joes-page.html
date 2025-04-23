@@ -12,10 +12,11 @@
 
 <div class="main-container">
     <div class="col-1">
+        <i class="fa-solid fa-house" onclick="window.location.href='index.html'" style="font-size: 32px; margin-top: 5%;"></i>
         <img src="images/river.png" alt="Photo of a river in Michigan">
     </div>
     <div class="col-2">
-        <h1 class="sub-title">About Me</h1>
+        <h1 class="sub-title">Joe Manternach</h1>
         <p>
             I am an avid outdoor enthusiast who enjoys running, biking, hiking, fishing, and camping. I find joy in staying active and connected to nature. <br><br>Currently, I am pursuing a Bachelor's degree in Electrical Engineering at the University of Iowa, with an expected graduation in December 2025. My academic journey has been enriched by my role as a teaching assistant in an electronics class. Additionally, I work as a part-time student quality engineer at John Deere. I have a passion for continuous learning, which inspired me to create my personal website to showcase my projects and skills.
             <br>
@@ -51,10 +52,10 @@
         </div>
         <div class="tab-contents" id="contact">
             <div class="email-form">
-                <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+                <form>
                   <div class="form-group">
                     <label>To:</label>
-                    <input type="text" value="Joe" disabled />
+                    <input type="text" id='to' value="Joe" disabled />
                   </div>
               
                   <div class="form-group">
@@ -72,8 +73,9 @@
                     <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
                   </div>
               
-                  <button type="submit">Send</button>
+                  
                 </form>
+                <button id="send-button">Send</button>
               </div>
               
         </div>         
@@ -83,8 +85,8 @@
 
 </body>
 
-<script src="js/memberScripts.js"></script>
-
+<script src="js/memberScripts.js" type="module"></script>
+<script src="https://kit.fontawesome.com/c761d4f0b6.js" crossorigin="anonymous"></script>
 </html>
 
 
