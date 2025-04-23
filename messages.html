@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Messages</title>
   <link rel="stylesheet" href="style/memberStyle.css" />
+  <style>
+    /* Optional table styling if you want it to look more structured */
+    .message-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .message-table th, .message-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    .message-table th {
+      background-color: #f4f4f4;
+    }
+  </style>
+
 </head>
 <body>
   <div class="main-container">
@@ -12,13 +29,24 @@
       <h1 class="sub-title">Messages</h1>
 
       <div id="messages-container">
-        <div id="output">
-          <!-- Messages will be injected here -->
-        </div>
+        <table class="message-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>To</th>
+              <th>From</th>
+              <th>Subject</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody id="output">
+            <!-- Messages will be injected here -->
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/messageScripts.js" type="module"></script>
 </body>
 </html>
