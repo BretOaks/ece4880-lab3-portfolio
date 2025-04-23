@@ -12,12 +12,13 @@
 
 <div class="main-container">
     <div class="col-1">
-        <img src="assets/river.png" alt="Photo of a river in Michigan">
+        <i class="fa-solid fa-house" onclick="window.location.href='index.html'" style="font-size: 32px; margin-top: 5%;"></i>
+        <img src="images/river.png" alt="Photo of a river in Michigan">
     </div>
     <div class="col-2">
-        <h1 class="sub-title">About Me</h1>
+        <h1 class="sub-title">Bret Okrasinski</h1>
         <p>
-            I am an avid outdoor enthusiast who enjoys running, biking, hiking, fishing, and camping. I find joy in staying active and connected to nature. <br><br>Currently, I am pursuing a Bachelor's degree in Electrical Engineering at the University of Iowa, with an expected graduation in December 2025. My academic journey has been enriched by my role as a teaching assistant in an electronics class. Additionally, I work as a part-time student quality engineer at John Deere. I have a passion for continuous learning, which inspired me to create my personal website to showcase my projects and skills.
+            Born and raised in Chicago, I enjoy watching sports, golfing and spending time with friends and family. Whether its a casual game or just hanging out, I value good company and staying active. <br><br>Currently, I am pursuing a Bachelor's degree in Electrical Engineering at the University of Iowa, with an expected graduation in December 2025. Throughout my academic journey, I've built a strong foundation in electrical engineering with hands-on experience in circuit design, power systems and embedded technologies. Looking ahead, my goal is to apply my skills in the power systems industry, contribute to innovative energy solutions, and eventually purse licensure as a Professional Engineer.
             <br>
         </p>
 
@@ -29,7 +30,7 @@
         </div>
         <div class="tab-contents active-tab" id="hobbies">
             <ul>
-                <li><span>Running</span><br>I enjoy running, particularly trail running, and have completed three half marathons. It's a great way to wrap up a great day, allowing me to unwind.</li>
+                <li><span>Golfing</span><br>I enjoy spending time on the golf course, whether its a quick nine holes or a full round with friends. Its a great way to relax, stay active, and enjoy some friendly competition in the outdoors</li>
                 <li><span>Biking</span><br>I bike commute to class every day and love finding new paths to ride. Exploring new routes keeps my daily rides exciting and fresh.</li>
                 <li><span>Fishing</span><br>I love fishing in creeks. Hooking into a monster small mouth is an exhilarating feeling that keeps me coming back for more.</li>
                 <li><span>Camping</span><br>I've loved camping since I was a kid. I enjoy being outdoors in the woods, and there's something special about cooking food over the fire at night, surrounded by nature.</li>
@@ -50,9 +51,33 @@
             </ul>
         </div>
         <div class="tab-contents" id="contact">
-            <ul>
-                <li><span>Email</span><br>joemanternach18@gmail.com</li>
-            </ul>
+            <div class="email-form">
+                <form>
+                  <div class="form-group">
+                    <label>To:</label>
+                    <input type="text" id='to' value="Joe" disabled />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="email" id="from" name="from" placeholder="your.email@example.com" required />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject line" required />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                  </div>
+              
+                  
+                </form>
+                <button id="send-button">Send</button>
+              </div>
+              
         </div>         
     </div>
 
@@ -60,10 +85,10 @@
 
 </body>
 
-<script src="js/memberScripts.js"></script>
+<script src="js/memberScripts.js" type="module"></script>
+<script src="js/messageScripts.js" type="module"></script>
 
+<script src="https://kit.fontawesome.com/c761d4f0b6.js" crossorigin="anonymous"></script>
 </html>
-
-
 
 
