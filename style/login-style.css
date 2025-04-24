@@ -55,6 +55,14 @@ html {
     margin-top: 10vh;
 }
 
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+
 @font-face {
     font-family: 'Antonio';
     src: url('fonts/antonio/Antonio-Regular.ttf') format('truetype');
