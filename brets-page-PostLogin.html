@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bret's Page</title>
+
+    <link rel="stylesheet" href="style/memberStyle.css">
+
+</head>
+<body>
+
+<div class="main-container">
+    <div class="col-1">
+        <i class="fa-solid fa-house" onclick="window.location.href='indexPostLogin.html'" style="font-size: 32px; margin-top: 5%;"></i>
+        <img src="images/BretPics/BearsGame.jpg" alt="Profile Picture for Bret">
+    </div>
+    <div class="col-2">
+        <h1 class="sub-title">Bret Okrasinski</h1>
+        <p>
+            Born and raised in Chicago, I enjoy watching sports, golfing, and spending time with friends and family. Whether it is a casual game or just hanging out, I value good company and staying active. <br><br>Currently, I am pursuing a Bachelor's degree in Electrical Engineering at the University of Iowa with an expected graduation in December 2025. Throughout my academic journey, I've built a strong foundation in electrical engineering with hands-on experience in circuit design, power systems and embedded technologies. Looking ahead, my goal is to apply my skills in the power systems industry, contribute to innovative energy solutions, and eventually purse licensure as a Professional Engineer.
+            <br>
+        </p>
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'hobbies')">Hobbies</p>
+            <p class="tab-links" onclick="opentab(event, 'skills')">Skills</p>   
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>   
+            <p class="tab-links" onclick="opentab(event, 'contact')">Contact</p>  
+        </div>
+        <div class="tab-contents active-tab" id="hobbies">
+            <ul>
+                <li><span>Golfing</span><br>I enjoy spending time on the golf course, whether it is a quick nine holes or a full round with friends. It is a great way to relax, stay active, and enjoy some friendly competition in the outdoors.</li>
+                <li><span>Attending Sporting Events</span><br>I've always loved the energy of live sports. Whether its a football, basketball, or a hockey matchup, being in the crowd adds a whole new level of excitement to the experience.</li>
+                <li><span>Listening to Music</span><br>Music is a big part of my daily routine. I enjoy discovering new artists and revisiting old favorites, it is a great way to unwind and stay motivated during work or workouts.</li>
+                <li><span>Video Games</span><br>Gaming is one of my favorite ways to stay connected with friends. Whether we're working together or going head-to-head, it is always a good time and a fun break from my day-to-day routine.</li>
+            </ul>
+        </div>                
+        <div class="tab-contents" id="skills">
+            <ul>
+                <li><span>Power Systems</span><br> I've worked with key concepts in power systems including: load flow analysis, power factor correction, and fault studies. Using tools like PowerWorld and MATLAB, I've simulated real-world electrical networks and developed a deeper understanding of how to improve system efficiency and reliability. </li>
+                <li><span>Soldering & PCB Assembly</span><br>I'm confident in soldering both through-hole and surface-mount componenets, and have assembled multiple PCBs for use in RF and embedded systems. I'm also experienced in reading schematics and performing hands-on debugging to ensure circuit functionality.</li>
+                <li><span>RF Circuit Design</span><br>My RF experience includes designing and simulating filters, attenuators, and transmission lines using ADS. I've also assembled SMT-based RF circuits and verified their performance through S-parameter measurements and Smith Chart Analysis, giving me insight into high-frequency signal behavior.</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>Assitant Crew Leader / Project Manager</span><br>While working for a deck staining company, I helped lead daily operations by organizing job sites, coordinating tasks, and communicating with clients. This experience taught me how to manage time effectively, lead small teams, and handle project responsibilities in a fast-paced environment.</li>
+                <li><span>Executive New Member Educator</span><br>I led weekly meetings and guided new fraternity members through our onboarding process. I foucsed on building strong connections, encouraging accountability, and helping new members understand our values and culture.</li>
+                <li><span>Circuit Designer</span><br> I've designed and built various analog and digital circuits for both class and personal projects. From IR-based systems to power supply filtering, I've worked with simulation tools, breadboarding, and PCB assembly to bring circuit concepts into working prototypes. </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="contact">
+            <div class="email-form">
+                <form>
+                  <div class="form-group">
+                    <label>To:</label>
+                    <input type="text" id='to' value="Bret" disabled />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="email" id="from" name="from" placeholder="your.email@example.com" required />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject line" required />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                  </div>
+              
+                  
+                </form>
+                <button id="send-button">Send</button>
+              </div>
+              
+        </div>         
+    </div>
+
+</div>
+
+</body>
+
+<script src="js/memberScripts.js" type="module"></script>
+<script src="js/messageScripts.js" type="module"></script>
+
+<script src="https://kit.fontawesome.com/c761d4f0b6.js" crossorigin="anonymous"></script>
+</html>
+
+
