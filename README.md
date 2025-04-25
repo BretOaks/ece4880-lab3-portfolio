@@ -12,7 +12,7 @@ This is a group portfolio website created for **Lab 3** of *Principles of ECE De
 
 ##  Live Website
 
-Website hosted on: [Add your MyWeb or GitHub Pages URL here]
+Website hosted on: https://bretoaks.github.io/ece4880-lab3-portfolio/ 
 
 ---
 
