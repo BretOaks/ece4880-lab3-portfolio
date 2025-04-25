@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Setup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .setup-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .warning {
+            color: #ff3300;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="setup-container">
+        <h1>Admin Password Setup</h1>
+        <p>This page will set the admin password in your Firebase database.</p>
+        <p>Open the console (F12) to see any additional information.</p>
+        <div id="status">Setting up password...</div>
+    </div>
+
+    <script src="js/setupPassword.js" type="module"></script>
+</body>
+</html>
